@@ -1,0 +1,70 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    font-family: 'Roboto', 'Segoe UI';
+    width: 100vw;
+}
+
+.inicio {
+    height: 100vh;
+    width: 100vw;
+    display: block;
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url('./img/tattoo.webp');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: 1;
+}
+
+.inicioMsg {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 5;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+}
+
+.inicioMsg .headTag {
+    font-size: 80px;
+    font-weight: bold;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+}
+
+.inicioMsg .subTag,
+.sectionHead {
+    font-size: 20px;
+    padding: 25px 0;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    word-spacing: 1.5px;
+}
+
+section {
+    display: block;
+    padding: 40px 0;
+    width: 100%;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    background-color: #fff;
+    z-index: 100;
+    text-align: right;
+}
